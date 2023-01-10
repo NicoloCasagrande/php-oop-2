@@ -24,7 +24,12 @@
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $product->name ?></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Prezzo: <?php echo $product->price ?></p>
+                        <span class="card-text">Category:</span>
+                        <?php foreach ($product->category as $cat) { ?>
+                        <span class="card-text"><?php echo $cat->name ?></span>
+                        <?php } ?>
+                        <p class="card-text"><?php if($product->type) echo $product->type ?></p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
