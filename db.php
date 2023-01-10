@@ -16,5 +16,4 @@
         new AnimalsBed('oggetto-qualsiasi', 10.00, [$cat]), 
     ];
 
-    var_dump($products);
 ?>
