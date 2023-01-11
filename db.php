@@ -16,4 +16,8 @@
         new AnimalsBed('oggetto-qualsiasi', 10.00, [$cat]), 
     ];
 
+    foreach ($products as $product) {
+        $product->setImage('https://www.rainews.it/dl/img/2022/05/29/1653823359813_Immagine__.png');
+    }
+
 ?>
